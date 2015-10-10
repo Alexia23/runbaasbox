@@ -1,0 +1,67 @@
+<!-- Add/Edit Action starts -->
+	<div class="modal hide fade" id="addActionModal">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">×</button>
+			<h3 id="actionTitle">组织活动 (Add/Edit Action)</h3>
+		</div>
+		<div class="modal-body">
+			<div class="row-fluid">
+			<div class="box span12" id="ActionForm">
+					<div class="box-content">
+						<form class="form-horizontal" id="actionForm">
+						<div class="alert alert-info">
+							请输入活动信息 (Please enter the Action information)
+						</div>
+						<p class="hint">
+							Provide the required information.
+						</p>
+							<fieldset>
+								<div id="actionModalMode" class="hide"> </div>
+								<div id="errorAddAction" class="alert alert-error hide"></div>
+								<div id="errorAddAction2" class="control-group error hide" >
+									 <span class="help-inline" id="errorAddActionMessage"></span>
+								</div>
+							  <input id="txtActionId" name="txtActionId" type="hidden" />
+							  <div class="control-group">
+								<label class="control-label" for="txtActionName">Name*</label>
+								<div class="controls">
+								  <input class="input-xlarge focused" id="txtActionName" value="" required />
+								</div>
+							  </div>							  
+							  <div class="control-group">
+								<label class="control-label" for="txtActionStartTime">StartTime*</label>
+								<div class="controls">
+								  <input class="input-xlarge focused" id="txtActionStartTime" readonly required />
+								</div>
+							  </div>
+							  <div class="control-group">
+								<label class="control-label" for="txtActionEndTime">EndTime*</label>
+								<div class="controls">
+								  <input class="input-xlarge focused" id="txtActionEndTime" readonly required />
+								</div>
+							  </div>
+							  <div class="control-group">
+								<label class="control-label" for="txtActionTotalDistances">TotalDistances(km)*</label>
+								<div class="controls">
+								  <input class="input-xlarge focused" id="txtActionTotalDistances" value="" required />
+								</div>
+							  </div>
+							  <div class="control-group">
+								<label class="control-label" for="txtActionDescription">Description</label>
+								<div class="controls">
+								  <textarea class="input-xlarge focused" id="txtActionDescription" value="" /></textarea>
+								</div>
+							  </div>
+							</fieldset>
+						  </form>
+					</div>
+				</div><!--/span-->
+		</div><!--/row-->
+		</div>
+		<div class="modal-footer">
+			<a href="#" class="btn" data-dismiss="modal">Close</a>
+			<a href="#" class="btn btn-action btn-ActionReload btn-warning" data-rel="tooltip" title="Reload the action from the server"  >Reload</a>
+			<a href="#" class="btn btn-primary btn-ActionCommit">Save</a>
+		</div>
+	</div>
+	<!-- Add/Edit Action ends -->

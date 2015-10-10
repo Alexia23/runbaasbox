@@ -1,0 +1,49 @@
+<!-- Add/Edit Team starts -->
+	<div class="modal hide fade" id="addTeamModal">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">×</button>
+			<h3 id="teamTitle">管理团队 (Add/Edit Team)</h3>
+		</div>
+		<div class="modal-body">
+			<div class="row-fluid">
+			<div class="box span12" id="TeamForm">
+					<div class="box-content">
+						<form class="form-horizontal" id="teamForm">
+						<div class="alert alert-info">
+							请输入团队信息 (Please enter the Team information)
+						</div>
+						<p class="hint">
+							Provide the required information.
+						</p>
+							<fieldset>
+								<div id="teamModalMode" class="hide"> </div>
+								<div id="errorAddTeam" class="alert alert-error hide"></div>
+								<div id="errorAddTeam2" class="control-group error hide" >
+									 <span class="help-inline" id="errorAddTeamMessage"></span>
+								</div>
+							  <input id="txtTeamId" name="txtTeamId" type="hidden" />
+							  <div class="control-group">
+								<label class="control-label" for="txtTeamName">Name*</label>
+								<div class="controls">
+								  <input class="input-xlarge focused" id="txtTeamName" value="" required />
+								</div>
+							  </div>							  
+							  <div class="control-group">
+								<label class="control-label" for="txtTeamDescription">Description</label>
+								<div class="controls">
+								  <textarea class="input-xlarge focused" id="txtTeamDescription" value="" /></textarea>
+								</div>
+							  </div>
+							</fieldset>
+						  </form>
+					</div>
+				</div><!--/span-->
+		</div><!--/row-->
+		</div>
+		<div class="modal-footer">
+			<a href="#" class="btn" data-dismiss="modal">Close</a>
+			<a href="#" class="btn btn-action btn-TeamReload btn-warning" data-rel="tooltip" title="Reload the team from the server"  >Reload</a>
+			<a href="#" class="btn btn-primary btn-TeamCommit">Save</a>
+		</div>
+	</div>
+	<!-- Add/Edit Team ends -->
