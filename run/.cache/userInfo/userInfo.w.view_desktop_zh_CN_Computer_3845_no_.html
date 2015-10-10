@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window" component="$model/UI2/system/components/justep/window/window" design="device:mobile" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __justepbasexid__="__baseID__" components="$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/messageDialog/messageDialog,$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/input/input,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad"/>  
+  <span xmlns="" component="$model/UI2/system/components/justep/messageDialog/messageDialog" xid="messageDialog" style="left:20px;top:18px;" data-bind="component:{name:'$model/UI2/system/components/justep/messageDialog/messageDialog'}" data-config="{&quot;type&quot;:&quot;OK&quot;}"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal-overlay"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-modal">  
+      <div class="x-modal-inner"> 
+        <div class="x-modal-title"/>  
+        <div class="x-modal-text"/>  
+        <input class="x-modal-prompt-input" type="text"/> 
+      </div>  
+      <div class="x-modal-buttons"> 
+        <a class="x-modal-button x-modal-button-bold OK" value="ok">确定</a>  
+        <a class="x-modal-button x-modal-button-bold Yes" value="yes">是</a>  
+        <a class="x-modal-button x-modal-button-bold No" value="no">否</a>  
+        <a class="x-modal-button x-modal-button-bold Cancel" value="cancel">取消</a> 
+      </div> 
+    </div> 
+  </span>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p477b5c517b6740d5a35ef3a505a327ea-iosstatusbar" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}"> 
+    <div class="x-panel-top" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;注册&quot;}"> 
+        <div class="x-titlebar-left" xid="div1"/>  
+        <div class="x-titlebar-title" xid="div2">注册</div>  
+        <div class="x-titlebar-right " xid="div3"> 
+          <div class="empty"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}"> 
+      <div xid="div6" style="margin:10px;padding:10px;"> 
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit" xid="labelInput9" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}"> 
+          <label class="x-label" xid="label4" style="width:80px;">姓名*</label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit" xid="user_name" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}"/> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit" xid="labelInput10" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}"> 
+          <label class="x-label" xid="label10" style="width:80px;">入学年级*</label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit" xid="user_grade" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;placeHolder&quot;:&quot;如：99级计算机系&quot;}"/> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit" xid="labelInput11" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}"> 
+          <label class="x-label" xid="label11" style="width:80px;">工作单位*</label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit" xid="user_company" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}"/> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit" xid="labelInput8" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}"> 
+          <label class="x-label" xid="label5" style="width:80px;">电话*</label>  
+          <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit" xid="user_mobile" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;dataType&quot;:&quot;Integer&quot;}"/> 
+        </div>  
+        <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30" xid="labelSelect2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}"> 
+          <label class="x-label" xid="label13" style="width:80px;">团队组织*</label>  
+          <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit" xid="user_team" data-bind="component:{name:'$model/UI2/system/components/justep/select/select'},options:teamData.datas,optionsValue:'id',optionsText:'name',optionsAfterRender:$model.__justep__.selectOptionsAfterRender.bind($model,$element)"/> 
+        </div> 
+      </div>  
+      <div xid="div7" style="text-align:right;padding-right:10px;"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm" xid="saveUserBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:saveUserBtnClick" data-config="{&quot;label&quot;:&quot;提交用户信息&quot;}"> 
+          <i xid="i2"/>  
+          <span xid="span5">提交用户信息</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style>.x-panel.p477b5c517b6740d5a35ef3a505a327ea-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p477b5c517b6740d5a35ef3a505a327ea-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p477b5c517b6740d5a35ef3a505a327ea-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p477b5c517b6740d5a35ef3a505a327ea-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p477b5c517b6740d5a35ef3a505a327ea-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p477b5c517b6740d5a35ef3a505a327ea-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p477b5c517b6740d5a35ef3a505a327ea-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver" xid="popOver1" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;dismissible&quot;:false,&quot;opacity&quot;:0.8}"> 
+    <div class="x-popOver-overlay" xid="div8" style="font-size:medium;"/>  
+    <div class="x-popOver-content" xid="div9"> 
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon" xid="button5" style="font-size:36px;height:63px;width:71px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-loading-a&quot;,&quot;label&quot;:&quot;button&quot;}"> 
+        <i xid="i5" class="icon-loading-a"/>  
+        <span xid="span7"/> 
+      </a> 
+    </div> 
+  </div>  
+  <script xmlns="">window.__justep.__ResourceEngine.loadCss([{url:'/$v3845_no_$lzh_CN$sdesktop$dpc/UI2/run/userInfo.css', include:'$model/UI2/run/userInfo.css'}]);</script>
+</div>
