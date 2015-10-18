@@ -1,0 +1,15 @@
+{
+	"userID" : "C6CC42951E100001C188183ECEC197D0",
+	"appName" : "run",
+	"sourceMode" : false,
+	"version" : "1.0.0",
+	"packageName" : "com.cst.run",
+	"serverURL" : "http://localhost",
+	"indexURL" : "/x5/UI2/run/index.w",
+	"uiResDirs" : "run",
+	"extBrowser" : true,
+	"autoSelectPlugins" : true,
+	"plugins" : "自动选择",
+	"resEncryption" : false,
+	"mqttServerURL" : ""
+}
